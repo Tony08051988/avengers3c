@@ -1,4 +1,4 @@
-唉<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -16,20 +16,25 @@
        body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    /* --- 新增的背景設定 --- */
-    background-image: url('https://i.imgur.com/6CgE3wW.png'); /* 這是您的蜂巢圖片連結 */
-    background-size: cover;         /* 讓圖片自動縮放以填滿整個畫面 */
-    background-position: center;    /* 讓圖片置中 */
-    background-repeat: no-repeat;   /* 圖片不重複 */
-    background-attachment: fixed;   /* 圖片固定，滑動頁面時背景不動，更有質感 */
-    /* ----------------------- */
-    background-color: var(--bg-dark); /* 如果圖片還沒載入，先顯示原本的深色 */
+    /* --- 完美科技黑底與精緻格線 --- */
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    /* ----------------------------- */
     color: var(--text-main);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
+}
+
+/* 確保標題周圍沒有多餘的黑方塊干擾 */
+header, .header-container {
+    background: transparent !important;
+}
+
 }
 
         header {
