@@ -80,15 +80,16 @@ header, .header-container {
             border-radius: 8px;
             border: 1px solid #2a2e39;
             text-align: center;
-           /* 統一商品卡片內圖片的大小與比例 */
+               /* 強制統一商品卡片內圖片的大小與比例 */
     .product-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: contain;
-        border-radius: 4px;
-        margin-bottom: 15px;
+        width: 100% !important;         /* 強制寬度佔滿 */
+        height: 200px !important;       /* 強制高度固定為 200px */
+        object-fit: contain !important; /* 強制圖片完整顯示，留白不變形 */
+        display: block !important;      /* 強制圖片為區塊元素，消除下方間隙 */
+        border-radius: 4px !important;  /* 強制圓角 */
+        margin-bottom: 15px !important; /* 強制下方間距 */
     }
- }
+
         /* 這裡是未來給主人換圖片的預留區塊 */
         .img-placeholder {
             width: 100%;
