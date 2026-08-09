@@ -80,16 +80,18 @@ header, .header-container {
             border-radius: 8px;
             border: 1px solid #2a2e39;
             text-align: center;
-            /* 強制統一商品卡片內圖片的大小與比例 (修正版) */
+            /* 強制所有商品卡片內的圖片，不管三七二十一全部變成跟行動電源一樣的大小與留白 */
     .product-card img {
-        width: 100% !important;       /* 寬度佔滿卡片 */
-        height: 160px !important;     /* 固定高度 (您可以依視覺喜好微調) */
-        object-fit: contain !important; /* 圖片完整顯示，維持比例，自動留白 */
+        width: 100% !important;
+        height: 160px !important;
+        max-height: 160px !important;
+        object-fit: contain !important;
         display: block !important;
-        margin-bottom: 15px !important;
-        background-color: #ffffff !important; /* 確保留白區域是白色的，行動電源那張也是這樣 */
+        margin: 0 auto 15px auto !important;
+        background-color: #ffffff !important;
         border-radius: 4px !important;
     }
+
         /* 按鈕基本樣式 */
         .btn {
             display: inline-block;
