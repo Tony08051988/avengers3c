@@ -33,12 +33,19 @@
         }
         .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
         
+        /* 前8個品牌採用滿版裁切 */
         .brand-card img { 
             width: 100%; 
-            height: 78px; /* 幾乎佔滿上半部，消除多餘留白 */
-            object-fit: cover; /* 滿版裁切，消除四周空白邊框 */
+            height: 78px; 
+            object-fit: cover; 
             border-radius: 6px;
             display: block; 
+        }
+
+        /* 專門針對 VOORCA 調整：完整呈現不被裁切 */
+        .brand-card img.voorca-logo {
+            object-fit: contain;
+            background-color: #000;
         }
 
         .brand-name {
@@ -103,9 +110,9 @@
                 <span class="brand-name">Hoda</span>
             </a>
 
-            <!-- VOORCA -->
+            <!-- VOORCA (獨立套用 voorca-logo 樣式確保完整顯示) -->
             <a href="voorca-models.html" class="brand-card">
-                <img src="IMG_2793.webp" alt="VOORCA">
+                <img src="IMG_2793.webp" alt="VOORCA" class="voorca-logo">
                 <span class="brand-name">VOORCA</span>
             </a>
         </div>
