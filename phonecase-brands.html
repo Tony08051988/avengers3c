@@ -19,22 +19,29 @@
 
         .brand-card { 
             background-color: var(--card-bg); 
-            padding: 12px 8px; 
+            padding: 16px 10px; 
             border-radius: 12px; 
             border: 1px solid #333; 
             text-decoration: none; 
             display: flex; 
+            flex-direction: column; 
             justify-content: center; 
             align-items: center; 
-            height: 75px; /* 放大卡片高度 */
+            height: 95px; /* 放大卡片高度容納圖片與文字 */
             transition: 0.3s; 
         }
         .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
         .brand-card img { 
-            max-height: 55px; /* 放大圖片最大高度，讓 Logo 更清晰顯眼 */
+            max-height: 48px; /* 圖片保持清晰適中大小 */
             max-width: 100%; 
             object-fit: contain; 
             display: block; 
+            margin-bottom: 8px; /* 圖片與文字間距 */
+        }
+        .brand-name {
+            font-size: 13px;
+            color: #b0c4de;
+            font-weight: 500;
         }
         .back-btn { display: inline-block; margin-top: 30px; padding: 10px 20px; color: #888; text-decoration: none; font-size: 14px; }
     </style>
@@ -47,46 +54,55 @@
             <!-- UAG -->
             <a href="uag-models.html" class="brand-card">
                 <img src="IMG_1735.webp" alt="UAG">
+                <span class="brand-name">UAG</span>
             </a>
 
             <!-- 犀牛盾 -->
             <a href="rhinoshield-models.html" class="brand-card">
                 <img src="IMG_2779.webp" alt="犀牛盾">
+                <span class="brand-name">犀牛盾</span>
             </a>
 
             <!-- 惡魔盾 -->
             <a href="devilhive-models.html" class="brand-card">
                 <img src="IMG_2778.jpeg" alt="惡魔盾">
+                <span class="brand-name">惡魔盾</span>
             </a>
 
             <!-- UNIQ -->
             <a href="uniq-models.html" class="brand-card">
                 <img src="IMG_2780.jpeg" alt="UNIQ">
+                <span class="brand-name">UNIQ</span>
             </a>
 
             <!-- SKINARMA -->
             <a href="skinarma-models.html" class="brand-card">
                 <img src="IMG_2781.jpeg" alt="SKINARMA">
+                <span class="brand-name">SKINARMA</span>
             </a>
 
             <!-- 國家地理頻道 -->
             <a href="natgeo-models.html" class="brand-card">
                 <img src="IMG_2782.jpeg" alt="國家地理頻道">
+                <span class="brand-name">國家地理</span>
             </a>
 
             <!-- imos -->
             <a href="imos-models.html" class="brand-card">
                 <img src="IMG_2783.jpeg" alt="imos">
+                <span class="brand-name">imos</span>
             </a>
 
             <!-- Hoda -->
             <a href="hoda-models.html" class="brand-card">
                 <img src="IMG_2784.webp" alt="Hoda">
+                <span class="brand-name">Hoda</span>
             </a>
 
             <!-- VOORCA -->
             <a href="voorca-models.html" class="brand-card">
                 <img src="IMG_2793.webp" alt="VOORCA">
+                <span class="brand-name">VOORCA</span>
             </a>
         </div>
         
