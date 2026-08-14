@@ -8,78 +8,87 @@
         :root { --bg-dark: #0f1115; --card-bg: #1c1f26; --text-main: #e0e6ed; --accent-neon: #00f0ff; }
         body { background-color: var(--bg-dark); color: var(--text-main); font-family: sans-serif; padding: 20px; text-align: center; margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
         .container { max-width: 400px; width: 100%; }
-        h1 { font-size: 20px; margin-bottom: 30px; }
+        h1 { font-size: 20px; margin-bottom: 25px; }
+        
+        /* 雙欄網格佈局 */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
         .brand-card { 
             background-color: var(--card-bg); 
-            padding: 15px; 
+            padding: 15px 10px; 
             border-radius: 12px; 
             border: 1px solid #333; 
             text-decoration: none; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            height: 50px; /* 統一卡片內高度 */
+            height: 55px; 
             transition: 0.3s; 
-            margin-bottom: 20px;
         }
-        .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-5px); }
+        .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
         .brand-card img { 
-            max-height: 42px; /* 統一限制圖片的最大高度 */
+            max-height: 38px; 
             max-width: 100%; 
             object-fit: contain; 
             display: block; 
         }
-        .back-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; color: #888; text-decoration: none; font-size: 14px; }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 20px; color: #888; text-decoration: none; font-size: 14px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>請選擇品牌</h1>
         
-        <!-- UAG -->
-        <a href="uag-models.html" class="brand-card">
-            <img src="IMG_1735.webp" alt="UAG">
-        </a>
+        <div class="brand-grid">
+            <!-- UAG -->
+            <a href="uag-models.html" class="brand-card">
+                <img src="IMG_1735.webp" alt="UAG">
+            </a>
 
-        <!-- 犀牛盾 -->
-        <a href="rhinoshield-models.html" class="brand-card">
-            <img src="IMG_2779.webp" alt="犀牛盾">
-        </a>
+            <!-- 犀牛盾 -->
+            <a href="rhinoshield-models.html" class="brand-card">
+                <img src="IMG_2779.webp" alt="犀牛盾">
+            </a>
 
-        <!-- 惡魔盾 -->
-        <a href="devilhive-models.html" class="brand-card">
-            <img src="IMG_2778.jpeg" alt="惡魔盾">
-        </a>
+            <!-- 惡魔盾 -->
+            <a href="devilhive-models.html" class="brand-card">
+                <img src="IMG_2778.jpeg" alt="惡魔盾">
+            </a>
 
-        <!-- UNIQ -->
-        <a href="uniq-models.html" class="brand-card">
-            <img src="IMG_2780.jpeg" alt="UNIQ">
-        </a>
+            <!-- UNIQ -->
+            <a href="uniq-models.html" class="brand-card">
+                <img src="IMG_2780.jpeg" alt="UNIQ">
+            </a>
 
-        <!-- SKINARMA -->
-        <a href="skinarma-models.html" class="brand-card">
-            <img src="IMG_2781.jpeg" alt="SKINARMA">
-        </a>
+            <!-- SKINARMA -->
+            <a href="skinarma-models.html" class="brand-card">
+                <img src="IMG_2781.jpeg" alt="SKINARMA">
+            </a>
 
-        <!-- 國家地理頻道 -->
-        <a href="natgeo-models.html" class="brand-card">
-            <img src="IMG_2782.jpeg" alt="國家地理頻道">
-        </a>
+            <!-- 國家地理頻道 -->
+            <a href="natgeo-models.html" class="brand-card">
+                <img src="IMG_2782.jpeg" alt="國家地理頻道">
+            </a>
 
-        <!-- imos -->
-        <a href="imos-models.html" class="brand-card">
-            <img src="IMG_2783.jpeg" alt="imos">
-        </a>
+            <!-- imos -->
+            <a href="imos-models.html" class="brand-card">
+                <img src="IMG_2783.jpeg" alt="imos">
+            </a>
 
-        <!-- Hoda -->
-        <a href="hoda-models.html" class="brand-card">
-            <img src="IMG_2784.webp" alt="Hoda">
-        </a>
+            <!-- Hoda -->
+            <a href="hoda-models.html" class="brand-card">
+                <img src="IMG_2784.webp" alt="Hoda">
+            </a>
 
-        <!-- VOORCA -->
-        <a href="voorca-models.html" class="brand-card">
-            <img src="IMG_2793.webp" alt="VOORCA">
-        </a>
+            <!-- VOORCA -->
+            <a href="voorca-models.html" class="brand-card">
+                <img src="IMG_2793.webp" alt="VOORCA">
+            </a>
+        </div>
         
         <a href="index.html" class="back-btn">← 返回首頁</a>
     </div>
