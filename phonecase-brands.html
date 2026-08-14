@@ -19,7 +19,7 @@
 
         .brand-card { 
             background-color: var(--card-bg); 
-            padding: 16px 10px; 
+            padding: 14px 8px; 
             border-radius: 12px; 
             border: 1px solid #333; 
             text-decoration: none; 
@@ -27,20 +27,31 @@
             flex-direction: column; 
             justify-content: center; 
             align-items: center; 
-            height: 95px; /* 放大卡片高度容納圖片與文字 */
+            height: 105px; 
             transition: 0.3s; 
         }
         .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
+        
         .brand-card img { 
-            max-height: 48px; /* 圖片保持清晰適中大小 */
-            max-width: 100%; 
             object-fit: contain; 
             display: block; 
-            margin-bottom: 8px; /* 圖片與文字間距 */
+            margin-bottom: 6px; 
         }
+
+        /* 針對每一個 Logo 個別精準放大，讓其在框內達到最佳視覺比例 */
+        .logo-uag { height: 38px; width: 100%; }
+        .logo-rhino { height: 58px; width: 100%; }
+        .logo-devil { height: 50px; width: 100%; }
+        .logo-uniq { height: 54px; width: 100%; }
+        .logo-skinarma { height: 50px; width: 100%; }
+        .logo-natgeo { height: 42px; width: 100%; }
+        .logo-imos { height: 44px; width: 100%; }
+        .logo-hoda { height: 42px; width: 100%; }
+        .logo-voorca { height: 36px; width: 100%; }
+
         .brand-name {
-            font-size: 13px;
-            color: #b0c4de;
+            font-size: 12px;
+            color: #94a3b8;
             font-weight: 500;
         }
         .back-btn { display: inline-block; margin-top: 30px; padding: 10px 20px; color: #888; text-decoration: none; font-size: 14px; }
@@ -53,55 +64,55 @@
         <div class="brand-grid">
             <!-- UAG -->
             <a href="uag-models.html" class="brand-card">
-                <img src="IMG_1735.webp" alt="UAG">
+                <img src="IMG_1735.webp" alt="UAG" class="logo-uag">
                 <span class="brand-name">UAG</span>
             </a>
 
             <!-- 犀牛盾 -->
             <a href="rhinoshield-models.html" class="brand-card">
-                <img src="IMG_2779.webp" alt="犀牛盾">
+                <img src="IMG_2779.webp" alt="犀牛盾" class="logo-rhino">
                 <span class="brand-name">犀牛盾</span>
             </a>
 
             <!-- 惡魔盾 -->
             <a href="devilhive-models.html" class="brand-card">
-                <img src="IMG_2778.jpeg" alt="惡魔盾">
+                <img src="IMG_2778.jpeg" alt="惡魔盾" class="logo-devil">
                 <span class="brand-name">惡魔盾</span>
             </a>
 
             <!-- UNIQ -->
             <a href="uniq-models.html" class="brand-card">
-                <img src="IMG_2780.jpeg" alt="UNIQ">
+                <img src="IMG_2780.jpeg" alt="UNIQ" class="logo-uniq">
                 <span class="brand-name">UNIQ</span>
             </a>
 
             <!-- SKINARMA -->
             <a href="skinarma-models.html" class="brand-card">
-                <img src="IMG_2781.jpeg" alt="SKINARMA">
+                <img src="IMG_2781.jpeg" alt="SKINARMA" class="logo-skinarma">
                 <span class="brand-name">SKINARMA</span>
             </a>
 
             <!-- 國家地理頻道 -->
             <a href="natgeo-models.html" class="brand-card">
-                <img src="IMG_2782.jpeg" alt="國家地理頻道">
+                <img src="IMG_2782.jpeg" alt="國家地理頻道" class="logo-natgeo">
                 <span class="brand-name">國家地理</span>
             </a>
 
             <!-- imos -->
             <a href="imos-models.html" class="brand-card">
-                <img src="IMG_2783.jpeg" alt="imos">
+                <img src="IMG_2783.jpeg" alt="imos" class="logo-imos">
                 <span class="brand-name">imos</span>
             </a>
 
             <!-- Hoda -->
             <a href="hoda-models.html" class="brand-card">
-                <img src="IMG_2784.webp" alt="Hoda">
+                <img src="IMG_2784.webp" alt="Hoda" class="logo-hoda">
                 <span class="brand-name">Hoda</span>
             </a>
 
             <!-- VOORCA -->
             <a href="voorca-models.html" class="brand-card">
-                <img src="IMG_2793.webp" alt="VOORCA">
+                <img src="IMG_2793.webp" alt="VOORCA" class="logo-voorca">
                 <span class="brand-name">VOORCA</span>
             </a>
         </div>
