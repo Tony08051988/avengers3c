@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鋼化玻璃分類 | 復仇者3C配件</title>
+    <style>
+        :root { --bg-dark: #0f1115; --card-bg: #1c1f26; --text-main: #e0e6ed; --accent-neon: #00f0ff; }
+        body { background-color: var(--bg-dark); color: var(--text-main); font-family: sans-serif; padding: 20px; text-align: center; margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        .container { max-width: 400px; width: 100%; }
+        h1 { font-size: 20px; margin-bottom: 25px; }
+        
+        /* 雙欄網格佈局 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .category-card { 
+            background-color: var(--card-bg); 
+            padding: 16px 10px; 
+            border-radius: 12px; 
+            border: 1px solid #333; 
+            text-decoration: none; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100px; 
+            transition: 0.3s; 
+        }
+        .category-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
+        
+        .category-title {
+            font-size: 14px;
+            color: #e0e6ed;
+            font-weight: 600;
+            line-height: 1.4;
+            text-align: center;
+        }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 20px; color: #888; text-decoration: none; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>選擇玻璃保護貼類型</h1>
+        
+        <div class="category-grid">
+            <!-- 1. 高透光9H鋼化玻璃 -->
+            <a href="glass-clear.html" class="category-card">
+                <span class="category-title">高透光9H<br>鋼化玻璃</span>
+            </a>
+
+            <!-- 2. 電競霧面消光 -->
+            <a href="glass-matte.html" class="category-card">
+                <span class="category-title">電競霧面消光</span>
+            </a>
+
+            <!-- 3. 隱私防偷窺 -->
+            <a href="glass-privacy.html" class="category-card">
+                <span class="category-title">隱私防偷窺</span>
+            </a>
+
+            <!-- 4. 霧面隱私防偷窺 -->
+            <a href="glass-matte-privacy.html" class="category-card">
+                <span class="category-title">霧面隱私防偷窺</span>
+            </a>
+
+            <!-- 5. 護眼抗藍光 -->
+            <a href="glass-bluelight.html" class="category-card">
+                <span class="category-title">護眼抗藍光</span>
+            </a>
+
+            <!-- 6. 霧面護眼抗藍光 -->
+            <a href="glass-matte-bluelight.html" class="category-card">
+                <span class="category-title">霧面護眼抗藍光</span>
+            </a>
+
+            <!-- 7. 4倍強化極致耐衝擊 -->
+            <a href="glass-shockproof.html" class="category-card">
+                <span class="category-title">4倍強化<br>極致耐衝擊</span>
+            </a>
+
+            <!-- 8. 頂級康寧鋼化玻璃 -->
+            <a href="glass-corning.html" class="category-card">
+                <span class="category-title">頂級康寧<br>鋼化玻璃</span>
+            </a>
+        </div>
+        
+        <a href="index.html" class="back-btn">← 返回首頁</a>
+    </div>
+</body>
+</html>
 
