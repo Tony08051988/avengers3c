@@ -3,54 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>復仇者3C配件</title>
+    <title>鋼化玻璃保護貼分類 | 復仇者3C配件</title>
     <style>
         :root { --bg-dark: #0f1115; --card-bg: #1c1f26; --text-main: #e0e6ed; --accent-neon: #00f0ff; }
-        body { background-color: var(--bg-dark); color: var(--text-main); font-family: sans-serif; padding: 20px; text-align: center; margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        .container { max-width: 400px; width: 100%; }
-        
-        .category-grid { display: flex; flex-direction: column; gap: 20px; }
-        
-        .category-card { 
-            background-color: var(--card-bg); 
-            padding: 20px; 
-            border-radius: 16px; 
-            border: 1px solid #333; 
-            text-decoration: none; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            transition: 0.3s; 
-            color: inherit;
-        }
-        .category-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
-        
-        .category-card h3 { color: var(--text-main); margin: 0 0 5px 0; }
-        .category-card p { color: #888; margin: 0; font-size: 14px; }
+        body { background-color: var(--bg-dark); color: var(--text-main); font-family: sans-serif; padding: 20px; margin: 0; display: flex; flex-direction: column; align-items: center; }
+        .container { max-width: 600px; width: 100%; }
+        h1 { text-align: center; color: var(--accent-neon); font-size: 24px; margin-bottom: 30px; }
+        .glass-list { display: flex; flex-direction: column; gap: 15px; }
+        .glass-card { background-color: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid #333; }
+        .glass-card h3 { margin: 0 0 8px 0; color: var(--accent-neon); font-size: 18px; }
+        .glass-card p { margin: 0; color: #aaa; font-size: 14px; line-height: 1.5; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: var(--accent-neon); text-decoration: none; font-size: 14px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>商品分類</h1>
+        <a href="index.html" class="back-btn">&larr; 返回主頁</a>
+        <h1>鋼化玻璃保護貼系列</h1>
         
-        <div class="category-grid">
-            <!-- 軍規防摔手機殼 -->
-            <a href="/avengers3c/phonecase-brands.html" class="category-card">
-                <h3>軍規防摔手機殼</h3>
-                <p>抵抗衝擊 完美守護</p>
-            </a>
-
-            <!-- 鋼化玻璃保護貼 (已修正為正確的專案路徑) -->
-            <a href="/avengers3c/tempered-glass-types.html" class="category-card">
-                <h3>鋼化玻璃保護貼</h3>
-                <p>極致抗刮 超清透防護</p>
-            </a>
-
-            <!-- 藍寶石高透鏡頭保護貼 -->
-            <a href="/avengers3c/lens-protection.html" class="category-card">
-                <h3>藍寶石高透鏡頭保護貼</h3>
-                <p>無損高透不反光 完美守護鏡頭不刮傷</p>
-            </a>
+        <div class="glass-list">
+            <div class="glass-card">
+                <h3>1. 高透光9H鋼化玻璃</h3>
+                <p>透光度佳、邊緣不刮手，最經典的日常防護首選。</p>
+            </div>
+            <div class="glass-card">
+                <h3>2. 電競霧面消光鋼化玻璃</h3>
+                <p>拒絕指紋殘留 手感滑順不澀</p>
+            </div>
+            <div class="glass-card">
+                <h3>3. 隱私防窺鋼化玻璃</h3>
+                <p>有效保護個人隱私，隨時守護機密</p>
+            </div>
+            <div class="glass-card">
+                <h3>4. 全能霧面防偷窺鋼化玻璃</h3>
+                <p>抗指紋+防偷窺 預防機密洩漏首選</p>
+            </div>
+            <div class="glass-card">
+                <h3>5. 護眼抗藍光鋼化玻璃</h3>
+                <p>有效過濾螢幕有害光 保護視力更輕鬆</p>
+            </div>
+            <div class="glass-card">
+                <h3>6. 霧面抗藍光鋼化玻璃</h3>
+                <p>護眼與手感兼具 舒適觀影新體驗</p>
+            </div>
+            <div class="glass-card">
+                <h3>7. 4倍強化極致耐衝擊玻璃</h3>
+                <p>通過落球測與壓邊測試 防護大幅提升</p>
+            </div>
+            <div class="glass-card">
+                <h3>8. 頂級康寧玻璃</h3>
+                <p>特殊鍍膜處理，原廠螢幕等級玻璃，兼具絲滑與防護。</p>
+            </div>
         </div>
     </div>
 </body>
