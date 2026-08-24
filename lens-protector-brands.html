@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鏡頭貼品牌系列 | 復仇者3C配件</title>
+    <style>
+        :root { 
+            --bg-dark: #0f1115; 
+            --card-bg: #1c1f26; 
+            --text-main: #e0e6ed; 
+            --accent-neon: #00f0ff; 
+        }
+        body { 
+            background-color: var(--bg-dark); 
+            color: var(--text-main); 
+            font-family: sans-serif; 
+            padding: 20px; 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .container { 
+            max-width: 600px; 
+            width: 100%; 
+        }
+        h1 { 
+            text-align: center; 
+            color: var(--accent-neon); 
+            font-size: 24px; 
+            margin-bottom: 30px; 
+        }
+        .brand-list { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+        }
+        .brand-card { 
+            background-color: var(--card-bg); 
+            padding: 20px; 
+            border-radius: 12px; 
+            border: 1px solid #333; 
+            text-align: center;
+        }
+        .brand-card img {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            border-radius: 8px;
+        }
+        .brand-card h3 { 
+            margin: 0 0 8px 0; 
+            color: var(--accent-neon); 
+            font-size: 18px; 
+        }
+        .brand-card p { 
+            margin: 0; 
+            color: #aaa; 
+            font-size: 14px; 
+            line-height: 1.5; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>鏡頭貼品牌系列</h1>
+        
+        <div class="brand-list">
+            <div class="brand-card">
+                <img src="IMG_3054.jpeg" alt="imos 鏡頭保護貼">
+                <h3>imos 鏡頭保護貼</h3>
+                <p>頂級藍寶石玻璃鏡頭保護鏡，超高透光與極致抗刮防護。</p>
+            </div>
+            
+            <div class="brand-card">
+                <img src="IMG_3056.jpeg" alt="hoda 鏡頭保護貼">
+                <h3>hoda 鏡頭保護貼</h3>
+                <p>高硬度抗撞擊，完美貼合，守護您的鏡頭不受日常磨損。</p>
+            </div>
+            
+            <div class="brand-card">
+                <img src="IMG_3058.jpeg" alt="UNIQTOUGH 鏡頭保護貼">
+                <h3>UNIQTOUGH 鏡頭保護貼</h3>
+                <p>精工金屬框與高透玻璃結合，兼具時尚美學與軍規防護。</p>
+            </div>
+        </div>
+
+        <!-- 獨立且位置完美下移的返回主頁按鈕 -->
+        <div style="text-align: center; margin-top: 50px; margin-bottom: 30px;">
+            <a href="index.html" style="color: var(--accent-neon); text-decoration: none; font-size: 16px;">&larr; 返回主頁</a>
+        </div>
+    </div>
+</body>
+</html>
