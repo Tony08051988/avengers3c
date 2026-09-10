@@ -71,14 +71,15 @@
             grid-template-columns: 1fr;
             gap: 20px;
         }
-        .product-card {
+            .product-card {
             background-color: var(--card-bg);
-            padding: 15px;
+            padding: 10px 15px; /* 上下內距縮小 */
             border-radius: 8px;
             border: 1px solid #2a2e39;
             text-align: center;
             transition: all 0.3s ease;
         }
+
         .product-card:hover {
             border-color: var(--accent-neon);
         }
@@ -87,16 +88,17 @@
             color: inherit;
             display: block;
         }
-            .product-card img {
+                .product-card img {
             width: auto !important;
             max-width: 80% !important;
-            height: 140px !important;
+            height: 120px !important; /* 高度稍微收窄一點點 */
             object-fit: contain !important;
             display: block !important;
-            margin: 0 auto 15px auto !important;
+            margin: 0 auto 8px auto !important; /* 圖片下方留白縮小 */
             background-color: transparent !important;
             border-radius: 4px !important;
         }
+
 
 
 
