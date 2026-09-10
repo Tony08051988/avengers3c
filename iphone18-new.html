@@ -93,7 +93,8 @@
             color: inherit;
             display: block;
         }
-                    .product-card img {
+                  /* 第一、二張維持精緻正方形白框 */
+        .product-card:not(:last-child) img {
             width: 110px !important;
             height: 110px !important;
             object-fit: contain !important;
@@ -104,6 +105,17 @@
             box-sizing: border-box !important;
             border-radius: 6px !important;
         }
+
+        /* 第三張維持剛剛那種滿版大氣的質感 */
+        .product-card:last-child img {
+            width: 100% !important;
+            height: 120px !important;
+            object-fit: cover !important;
+            display: block !important;
+            margin: 0 auto 10px auto !important;
+            border-radius: 6px !important;
+        }
+
 
 
 
