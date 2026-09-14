@@ -93,8 +93,8 @@
             color: inherit;
             display: block;
         }
-                  /* 第一、二張維持精緻正方形白框 */
-        .product-card:not(:last-child) img {
+                  /* 1. 手機殼圖片 (IMG_3749.jpeg)：維持精緻正方形白框 */
+        .product-card img[src="IMG_3749.jpeg"] {
             width: 110px !important;
             height: 110px !important;
             object-fit: contain !important;
@@ -105,6 +105,18 @@
             box-sizing: border-box !important;
             border-radius: 6px !important;
         }
+
+        /* 2. 鋼化玻璃圖片 (IMG_3886.jpeg) 與 3. 鏡頭貼圖片 (IMG_3714.jpeg)：改為完全一致的大氣滿版風格 */
+        .product-card img[src="IMG_3886.jpeg"],
+        .product-card img[src="IMG_3714.jpeg"] {
+            width: 100% !important;
+            height: 120px !important;
+            object-fit: cover !important;
+            display: block !important;
+            margin: 0 auto 10px auto !important;
+            border-radius: 6px !important;
+        }
+
 
         /* 第三張維持剛剛那種滿版大氣的質感 */
         .product-card:last-child img {
