@@ -3,170 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>選擇手機殼品牌 - 復仇者3C配件</title>
+    <title>選擇品牌 | 復仇者3C配件</title>
     <style>
-        :root {
-            --bg-color: #0b0f19;
-            --card-bg: #131825;
-            --accent-neon: #00f0ff;
-            --text-main: #ffffff;
-            --text-sub: #94a3b8;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        header h2 {
-            color: var(--accent-neon);
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-
-        header p {
-            color: var(--text-sub);
-            font-size: 14px;
-            margin: 0;
-        }
-
+        :root { --bg-dark: #0f1115; --card-bg: #1c1f26; --text-main: #e0e6ed; --accent-neon: #00f0ff; }
+        body { background-color: var(--bg-dark); color: var(--text-main); font-family: sans-serif; padding: 20px; text-align: center; margin: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
+        .container { max-width: 400px; width: 100%; }
+        h1 { font-size: 20px; margin-bottom: 25px; }
+        
+        /* 雙欄網格佈局 */
         .brand-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+            gap: 12px;
         }
 
-        .brand-card {
-            background-color: var(--card-bg);
-            border: 2px solid var(--accent-neon);
-            border-radius: 12px;
-            padding: 15px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-main);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            box-sizing: border-box;
-            height: 140px;
+        .brand-card { 
+            background-color: var(--card-bg); 
+            padding: 8px 8px 6px 8px; 
+            border-radius: 12px; 
+            border: 1px solid #333; 
+            text-decoration: none; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: center; 
+            height: 110px; 
+            overflow: hidden;
+            transition: 0.3s; 
         }
-
-        .brand-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
-        }
-
-        .brand-card img {
-            width: 100%;
-            height: 60px;
-            object-fit: contain;
-            margin-bottom: 10px;
-            background: #ffffff;
-            padding: 5px;
+        .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-3px); }
+        
+        /* 前8個品牌採用滿版裁切 */
+        .brand-card img { 
+            width: 100%; 
+            height: 78px; 
+            object-fit: cover; 
             border-radius: 6px;
-            box-sizing: border-box;
+            display: block; 
         }
 
-        .brand-card span {
-            font-size: 14px;
-            font-weight: bold;
-            color: var(--text-sub);
+        /* 專門針對 VOORCA 調整：完整呈現不被裁切 */
+        .brand-card img.voorca-logo {
+            object-fit: contain;
+            background-color: #000;
         }
 
-        .back-section {
-            text-align: center;
-            margin-top: 30px;
+        .brand-name {
+            font-size: 12px;
+            color: #cbd5e1;
+            font-weight: 600;
+            margin-top: 4px;
         }
-
-        .back-btn {
-            display: inline-block;
-            padding: 10px 25px;
-            border: 2px solid var(--accent-neon);
-            color: var(--accent-neon);
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .back-btn:hover {
-            background-color: var(--accent-neon);
-            color: var(--bg-color);
-        }
+        .back-btn { display: inline-block; margin-top: 30px; padding: 10px 20px; color: #888; text-decoration: none; font-size: 14px; }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <header>
-            <h2>🛡️ 選擇手機殼品牌</h2>
-            <p>為您的 iPhone 18 挑選頂級防摔軍規殼</p>
-        </header>
-
+        <h1>請選擇品牌</h1>
+        
         <div class="brand-grid">
-            <!-- 品牌 1 -->
-            <a href="#" class="brand-card">
+            <!-- UAG -->
+            <a href="uag-models.html" class="brand-card">
                 <img src="IMG_1735.webp" alt="UAG">
-                <span>UAG</span>
+                <span class="brand-name">UAG</span>
             </a>
 
-            <!-- 品牌 2 -->
-            <a href="#" class="brand-card">
+            <!-- 犀牛盾 -->
+            <a href="rhinoshield-models.html" class="brand-card">
                 <img src="IMG_2779.webp" alt="犀牛盾">
-                <span>犀牛盾</span>
+                <span class="brand-name">犀牛盾</span>
             </a>
 
-            <!-- 品牌 3 -->
-            <a href="#" class="brand-card">
+            <!-- 惡魔盾 -->
+            <a href="devilhive-models.html" class="brand-card">
                 <img src="IMG_2778.jpeg" alt="惡魔盾">
-                <span>惡魔盾 (DEVILCASE)</span>
+                <span class="brand-name">惡魔盾</span>
             </a>
 
-            <!-- 品牌 4 -->
-            <a href="#" class="brand-card">
+            <!-- UNIQ -->
+            <a href="uniq-models.html" class="brand-card">
                 <img src="IMG_2780.jpeg" alt="UNIQ">
-                <span>UNIQ</span>
+                <span class="brand-name">UNIQ</span>
             </a>
 
-            <!-- 品牌 5 -->
-            <a href="#" class="brand-card">
+            <!-- SKINARMA -->
+            <a href="skinarma-models.html" class="brand-card">
                 <img src="IMG_2781.jpeg" alt="SKINARMA">
-                <span>SKINARMA</span>
+                <span class="brand-name">SKINARMA</span>
             </a>
 
-            <!-- 品牌 6 -->
-            <a href="#" class="brand-card">
-                <img src="IMG_2784.webp" alt="Hoda">
-                <span>Hoda</span>
+            <!-- 國家地理頻道 -->
+            <a href="natgeo-models.html" class="brand-card">
+                <img src="IMG_2782.jpeg" alt="國家地理頻道">
+                <span class="brand-name">國家地理</span>
             </a>
 
-            <!-- 品牌 7 -->
-            <a href="#" class="brand-card">
+            <!-- imos -->
+            <a href="imos-models.html" class="brand-card">
                 <img src="IMG_2783.jpeg" alt="imos">
-                <span>imos</span>
+                <span class="brand-name">imos</span>
+            </a>
+
+            <!-- Hoda -->
+            <a href="hoda-models.html" class="brand-card">
+                <img src="IMG_2784.webp" alt="Hoda">
+                <span class="brand-name">Hoda</span>
+            </a>
+
+            <!-- VOORCA (獨立套用 voorca-logo 樣式確保完整顯示) -->
+            <a href="voorca-models.html" class="brand-card">
+                <img src="IMG_2793.webp" alt="VOORCA" class="voorca-logo">
+                <span class="brand-name">VOORCA</span>
             </a>
         </div>
-
-        <div class="back-section">
-            <a href="iphone18-new.html" class="back-btn">&larr; 返回上一頁</a>
-        </div>
+        
+        <a href="index.html" class="back-btn">← 返回首頁</a>
     </div>
-
 </body>
 </html>
-
