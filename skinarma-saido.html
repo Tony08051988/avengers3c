@@ -45,12 +45,19 @@
             box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
         }
 
-        .product-detail img {
-            width: 100%;
+        /* 讓兩張產品圖左右並排的容器 */
+        .image-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .image-row img {
+            width: 50%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 15px;
             object-fit: cover;
+            background-color: #2a2e39;
             pointer-events: none;
         }
 
@@ -111,7 +118,12 @@
         <h1>SKINARMA - Saido 磁吸基本款</h1>
         
         <div class="product-detail">
-            <img src="IMG_4431.webp" alt="Saido磁吸基本款">
+            <!-- 兩張產品圖左右並排 -->
+            <div class="image-row">
+                <img src="IMG_3630.webp" alt="Saido透明款">
+                <img src="IMG_3631.webp" alt="Saido黑色款">
+            </div>
+
             <div class="product-title">Saido 輕透防摔磁吸保護殼</div>
             
             <ul class="product-features">
