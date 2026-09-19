@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKINARMA Saido 系列 - 復仇者3C配件</title>
+    <title>SKINARMA Saido 系列防摔殼 - 復仇者3C配件</title>
     <style>
         :root {
             --bg-dark: #0f1115;
@@ -12,144 +12,114 @@
             --text-main: #ffffff;
             --text-sub: #cbd5e1;
         }
-
         body {
             background-color: var(--bg-dark);
             color: var(--text-main);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
-
-        .container {
-            max-width: 400px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-
-        h1 {
-            font-size: 18px;
-            margin: 15px 0 5px 0;
+        header {
+            background: linear-gradient(135deg, #1c1f26, #0f1115);
+            padding: 2rem 1rem;
             text-align: center;
+            border-bottom: 2px solid var(--accent-neon);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
             color: var(--accent-neon);
+            letter-spacing: 1px;
         }
-
-        .subtitle {
-            font-size: 13px;
+        header p {
+            margin: 0.5rem 0 0;
             color: var(--text-sub);
-            text-align: center;
-            margin-bottom: 20px;
+            font-size: 0.95rem;
         }
-
-        /* 顏色展示區格線 (2欄) */
-        .color-section {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            margin-bottom: 25px;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem;
         }
-
-        .color-card {
+        .product-card {
             background-color: var(--card-bg);
-            border: 2px solid var(--accent-neon);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
-            text-align: center;
-            padding-bottom: 8px;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 240, 255, 0.1);
         }
-
-        .color-card img {
-            width: 100%;
-            height: auto;
-            display: block;
+        .product-card h2 {
+            margin-top: 0;
+            color: var(--accent-neon);
+            font-size: 1.4rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
         }
-
-        .color-title {
-            font-size: 12px;
-            color: var(--text-main);
-            margin-top: 8px;
+        ul {
+            padding-left: 1.2rem;
+            color: var(--text-sub);
+        }
+        li {
+            margin-bottom: 0.6rem;
+        }
+        .highlight {
+            color: var(--accent-neon);
             font-weight: bold;
         }
-
-        /* 官方長圖展示區 */
-        .detail-img-container {
-            width: 100%;
-            background-color: var(--card-bg);
-            border: 2px solid var(--accent-neon);
-            border-radius: 12px;
-            overflow: hidden;
-            box-sizing: border-box;
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
-            margin-bottom: 25px;
-        }
-
-        .detail-img-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .back-section {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
         .back-btn {
-            display: inline-block;
-            padding: 10px 25px;
-            border: 2px solid var(--accent-neon);
-            color: var(--accent-neon);
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .back-btn:hover {
+            display: block;
+            text-align: center;
             background-color: var(--accent-neon);
-            color: var(--bg-dark);
+            color: #000;
+            text-decoration: none;
+            padding: 0.8rem;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 2rem 0;
+            transition: opacity 0.2s;
+        }
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
     </style>
 </head>
 <body>
 
+    <header>
+        <h1>SKINARMA Saido 系列防摔殼</h1>
+        <p>原宿潮流美學 ╳ 軍規級防摔保護</p>
+    </header>
+
     <div class="container">
-        <h1>SKINARMA Saido 磁吸基本款</h1>
-        <div class="subtitle">潮流透明防摔系列</div>
-
-        <!-- 顏色實拍展示區 (2欄排版) -->
-        <div class="color-section">
-            <div class="color-card">
-                <img src="IMG_3629.webp" alt="墨灰色正面">
-                <div class="color-title">墨灰色 (正面)</div>
-            </div>
-            <div class="color-card">
-                <img src="IMG_4432.webp" alt="墨灰色側面">
-                <div class="color-title">墨灰色 (側面)</div>
-            </div>
-            <div class="color-card">
-                <img src="IMG_3630.webp" alt="透明色正面">
-                <div class="color-title">透明色 (正面)</div>
-            </div>
-            <div class="color-card">
-                <img src="IMG_4433.webp" alt="透明色側面">
-                <div class="color-title">透明色 (側面)</div>
-            </div>
+        <div class="product-card">
+            <h2>商品特色亮點</h2>
+            <ul>
+                <li><span class="highlight">透明高透設計：</span>完美展現裸機質感，長時間使用也不易泛黃。</li>
+                <li><span class="highlight">四角氣囊防摔：</span>有效吸收日常跌落與碰撞的衝擊力，防護力滿分。</li>
+                <li><span class="highlight">潮流印花風格：</span>融合獨特的日系原宿街頭與賽博龐克元素，展現個人強烈態度。</li>
+                <li><span class="highlight">精準開孔：</span>按鍵回饋清脆俐落，充電孔與喇叭完美契合。</li>
+            </ul>
         </div>
 
-        <!-- 官方長圖特色介紹區 -->
-        <div class="detail-img-container">
-            <img src="IMG_3749.jpeg" alt="SKINARMA Saido 官方功能長圖">
+        <div class="product-card">
+            <h2>專屬防護、潮流隨行</h2>
+            <p>Saido 系列不只是防摔殼，更是您日常穿搭與展現品味的潮流配件。無論是日常通勤還是戶外活動，都能給您的愛機最安心的守護。</p>
         </div>
 
-        <div class="back-section">
-            <a href="skinarma18procase.html" class="back-btn">&larr; 返回系列選擇</a>
-        </div>
+        <a href="index.html" class="back-btn">返回首頁</a>
     </div>
+
+    <footer>
+        &copy; 2026 復仇者3C配件 All Rights Reserved.
+    </footer>
 
 </body>
 </html>
-
