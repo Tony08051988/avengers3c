@@ -19,7 +19,10 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
             padding: 20px;
+            box-sizing: border-box;
         }
+
+        *, *::before, *::after { box-sizing: border-box; }
 
         .container {
             max-width: 600px;
@@ -35,10 +38,11 @@
 
         .product-detail {
             background-color: var(--card-bg);
-            border: 1px solid rgba(0, 240, 255, 0.3);
+            border: 2px solid rgba(0, 240, 255, 0.5);
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
         }
 
         .product-detail img {
@@ -47,30 +51,49 @@
             border-radius: 8px;
             margin-bottom: 15px;
             object-fit: cover;
+            pointer-events: none;
         }
 
         .product-title {
             font-size: 18px;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--text-main);
         }
 
-        .product-desc {
-            font-size: 14px;
+        .product-features {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0 0 10px 0;
+        }
+
+        .product-features li {
+            font-size: 13.5px;
             color: var(--text-sub);
             line-height: 1.6;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .product-features li::before {
+            content: "•";
+            color: var(--accent-neon);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
 
         .back-btn {
             display: inline-block;
             background-color: transparent;
             color: var(--accent-neon);
-            border: 1px solid var(--accent-neon);
+            border: 2px solid var(--accent-neon);
             padding: 10px 20px;
             border-radius: 20px;
             text-decoration: none;
             font-size: 14px;
+            font-weight: bold;
             transition: all 0.3s ease;
             text-align: center;
         }
@@ -78,6 +101,7 @@
         .back-btn:hover {
             background-color: var(--accent-neon);
             color: var(--bg-dark);
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
         }
     </style>
 </head>
@@ -89,9 +113,15 @@
         <div class="product-detail">
             <img src="IMG_4431.webp" alt="Saido磁吸基本款">
             <div class="product-title">Saido 輕透防摔磁吸保護殼</div>
-            <div class="product-desc">
-                採用高防禦力抗黃化材質，結合強效磁吸圈，完美支援 MagSafe 各類磁吸配件。簡約俐落的軍規防摔設計，給您的愛機全方位的安全保護同時展現原機質感。
-            </div>
+            
+            <ul class="product-features">
+                <li>全新鏡頭框設計，搭配質感 Logo 細節</li>
+                <li>全新圓弧邊框設計，提升握持舒適度與穩定性</li>
+                <li>一體式相機控制按鍵設計，操作更直覺便利</li>
+                <li>側邊採用全新八角幾何紋理設計，展現獨特質感與辨識度</li>
+                <li>支援磁吸 / 無線充電功能</li>
+                <li>隨附可替換式掛繩孔配件，依需求自由更換</li>
+            </ul>
         </div>
 
         <a href="skinarma18procase.html" class="back-btn">← 返回上一頁</a>
@@ -99,4 +129,3 @@
 
 </body>
 </html>
-
