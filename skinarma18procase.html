@@ -23,7 +23,7 @@
         *, *::before, *::after { box-sizing: border-box; }
         .container { max-width: 600px; margin: 0 auto; text-align: center; }
         h1 { font-size: 22px; margin-bottom: 25px; color: var(--accent-neon); }
-        .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
         .brand-card {
             background-color: var(--card-bg);
             border: 1px solid rgba(0, 240, 255, 0.3);
@@ -51,6 +51,16 @@
             display: block;
             color: var(--text-main);
         }
+        .back-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent-neon);
+            border: 1px solid var(--accent-neon);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -73,7 +83,16 @@
                 <img src="IMG_3749.jpeg" alt="Helio CE磁吸支架款">
                 <span class="brand-name">Helio CE磁吸支架款</span>
             </a>
+            <a href="#" class="brand-card">
+                <img src="IMG_3749.jpeg" alt="Saturn 360旋轉星環磁吸支架款">
+                <span class="brand-name">Saturn 360旋轉星環磁吸支架款</span>
+            </a>
+            <a href="#" class="brand-card">
+                <img src="IMG_3749.jpeg" alt="Atlas抗震氣囊支架防摔殼">
+                <span class="brand-name">Atlas抗震氣囊支架防摔殼</span>
+            </a>
         </div>
+        <a href="iphone18-case.html" class="back-btn">← 返回上一頁</a>
     </div>
 </body>
 </html>
