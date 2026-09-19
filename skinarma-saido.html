@@ -45,19 +45,13 @@
             box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
         }
 
-        /* 讓兩張產品圖左右並排的容器 */
-        .image-row {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .image-row img {
-            width: 50%;
+        /* 上方原本的大圖 */
+        .main-img {
+            width: 100%;
             height: auto;
             border-radius: 8px;
+            margin-bottom: 15px;
             object-fit: cover;
-            background-color: #2a2e39;
             pointer-events: none;
         }
 
@@ -71,7 +65,7 @@
         .product-features {
             list-style-type: none;
             padding-left: 0;
-            margin: 0 0 10px 0;
+            margin: 0 0 15px 0;
         }
 
         .product-features li {
@@ -89,6 +83,24 @@
             position: absolute;
             left: 0;
             font-weight: bold;
+        }
+
+        /* 放在下方的兩張並排圖容器 */
+        .image-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        .image-row img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            background-color: #2a2e39;
+            pointer-events: none;
         }
 
         .back-btn {
@@ -118,12 +130,9 @@
         <h1>SKINARMA - Saido 磁吸基本款</h1>
         
         <div class="product-detail">
-            <!-- 兩張產品圖左右並排 -->
-            <div class="image-row">
-                <img src="IMG_3630.webp" alt="Saido透明款">
-                <img src="IMG_3631.webp" alt="Saido黑色款">
-            </div>
-
+            <!-- 1. 上方原本的雙色大圖 -->
+            <img src="IMG_4431.webp" alt="Saido磁吸基本款" class="main-img">
+            
             <div class="product-title">Saido 輕透防摔磁吸保護殼</div>
             
             <ul class="product-features">
@@ -134,6 +143,12 @@
                 <li>支援磁吸 / 無線充電功能</li>
                 <li>隨附可替換式掛繩孔配件，依需求自由更換</li>
             </ul>
+
+            <!-- 2. 下方左右並排的新實拍圖 -->
+            <div class="image-row">
+                <img src="IMG_3630.webp" alt="Saido透明款展示">
+                <img src="IMG_3631.webp" alt="Saido黑色款展示">
+            </div>
         </div>
 
         <a href="skinarma18procase.html" class="back-btn">← 返回上一頁</a>
