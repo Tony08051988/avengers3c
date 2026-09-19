@@ -26,15 +26,20 @@
         .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
         .brand-card {
             background-color: var(--card-bg);
-            border: 1px solid rgba(0, 240, 255, 0.3);
+            /* 加粗外框至 2px，讓質感更明顯 */
+            border: 2px solid rgba(0, 240, 255, 0.5);
             border-radius: 12px;
             padding: 12px;
             text-decoration: none;
             color: var(--text-main);
             display: block;
-            transition: transform 0.2s, border-color 0.2s;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
         }
-        .brand-card:hover { border-color: var(--accent-neon); transform: translateY(-2px); }
+        .brand-card:hover { 
+            border-color: var(--accent-neon); 
+            transform: translateY(-2px);
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+        }
         .brand-card img {
             width: 100%;
             height: 85px;
@@ -45,21 +50,26 @@
             pointer-events: none;
         }
         .brand-name {
-            font-size: 13px;
+            font-size: 11.5px;
             font-weight: bold;
             margin-top: 10px;
             display: block;
             color: var(--text-main);
+            /* 防止單字掉到第二行，並加上溢出省略保護 */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .back-btn {
             display: inline-block;
             background-color: transparent;
             color: var(--accent-neon);
-            border: 1px solid var(--accent-neon);
+            border: 2px solid var(--accent-neon);
             padding: 10px 20px;
             border-radius: 20px;
             text-decoration: none;
             font-size: 14px;
+            font-weight: bold;
         }
     </style>
 </head>
