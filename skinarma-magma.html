@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saido 磁吸基本款 - 復仇者3C配件</title>
+    <style>
+        :root {
+            --bg-dark: #0f1115;
+            --card-bg: #1c1f26;
+            --accent-neon: #00f0ff;
+            --text-main: #ffffff;
+            --text-sub: #cbd5e1;
+        }
 
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: var(--accent-neon);
+            text-align: center;
+        }
+
+        .product-detail {
+            background-color: var(--card-bg);
+            border: 2px solid rgba(0, 240, 255, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+        }
+
+        /* 統一設定所有圖片撐滿版面、圓角與間距 */
+        .product-detail img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .product-features {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0 0 15px 0;
+        }
+
+        .product-features li {
+            font-size: 13.5px;
+            color: var(--text-sub);
+            line-height: 1.6;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .product-features li::before {
+            content: "•";
+            color: var(--accent-neon);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* 下方多張展示圖的區塊分隔 */
+        .extra-images {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent-neon);
+            border: 2px solid var(--accent-neon);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-btn:hover {
+            background-color: var(--accent-neon);
+            color: var(--bg-dark);
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SKINARMA - Saido 磁吸基本款</h1>
+        
+        <div class="product-detail">
+            <!-- 1. 最上方原本的大圖 -->
+            <img src="IMG_4431.webp" alt="Saido磁吸基本款">
+            
+            <div class="product-title">Saido 輕透防摔磁吸保護殼</div>
+            
+            <ul class="product-features">
+                <li>全新鏡頭框設計，搭配質感 Logo 細節</li>
+                <li>全新圓弧邊框設計，提升握持舒適度與穩定性</li>
+                <li>一體式相機控制按鍵設計，操作更直覺便利</li>
+                <li>側邊採用全新八角幾何紋理設計，展現獨特質感與辨識度</li>
+                <li>支援磁吸 / 無線充電功能</li>
+                <li>隨附可替換式掛繩孔配件，依需求自由更換</li>
+            </ul>
+
+            <!-- 2. 緊接著文字下方的兩張特寫圖 -->
+            <div class="extra-images">
+                <img src="IMG_3630.webp" alt="Saido透明款特寫">
+                <img src="IMG_3631.webp" alt="Saido黑色款特寫">
+                
+                <!-- 3. 最下方的其他實拍展示大圖 -->
+                <img src="IMG_4435.webp" alt="實拍展示圖一">
+                <img src="IMG_4434.webp" alt="實拍展示圖二">
+                <img src="IMG_4430.webp" alt="實拍展示圖三">
+            </div>
+        </div>
+
+        <a href="skinarma18procase.html" class="back-btn">← 返回上一頁</a>
+    </div>
+
+</body>
+</html>
