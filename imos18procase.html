@@ -1,1 +1,108 @@
-
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imos 系列選擇 - 復仇者3C配件</title>
+    <style>
+        :root {
+            --bg-dark: #0f1115;
+            --card-bg: #1c1f26;
+            --accent-neon: #00f0ff;
+            --text-main: #ffffff;
+            --text-sub: #cbd5e1;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        .container { max-width: 600px; margin: 0 auto; text-align: center; }
+        h1 { font-size: 22px; margin-bottom: 25px; color: var(--accent-neon); }
+        .brand-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
+        .brand-card {
+            background-color: var(--card-bg);
+            /* 厚實外框 */
+            border: 2px solid rgba(0, 240, 255, 0.5);
+            border-radius: 12px;
+            padding: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            display: block;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+        .brand-card:hover { 
+            border-color: var(--accent-neon); 
+            transform: translateY(-2px);
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+        }
+        .brand-card img {
+            width: 100%;
+            /* 將圖片高度從 85px 放大到 135px，讓手機殼細節更清楚 */
+            height: 135px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+            background-color: #333;
+            pointer-events: none;
+        }
+        .brand-name {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            color: var(--text-main);
+            line-height: 1.3;
+            /* 讓文字自然換行，但確保高度對齊 */
+            min-height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent-neon);
+            border: 2px solid var(--accent-neon);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            background-color: var(--accent-neon);
+            color: var(--bg-dark);
+            box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>imos 系列選擇</h1>
+        <div class="brand-grid">
+            <a href="rhinoshield-airx.html" class="brand-card">
+                <img src="未命名作品.png" alt="Saido磁吸基本款">
+                <span class="brand-name">磁吸殼軍規防摔殼手機殼</span>
+            </a>
+            <a href="rhinoshield-clear.html" class="brand-card">
+                <img src="IMG_5062.jpeg" alt="Magma磁吸金屬款">
+                <span class="brand-name">Clear 抗黃化透明防摔磁吸手機殼</span>
+            </a>
+            <a href="rhinoshield-solidx.html" class="brand-card">
+                <img src="IMG_5329.jpeg" alt="Sanar城市山系機能磁吸款">
+                <span class="brand-name">Solid X 強化吸震緩衝手機殼</span>
+            </a>
+            <a href="rhinoshield-ModNX.html" class="brand-card">
+                <img src="IMG_5181.JPG " alt="Helio CE磁吸支架款">
+                <span class="brand-name">Mod NX 邊框背蓋兩用防摔手機殼</span>
+            </a>
+        </div>
+        <a href="iphone18-case.html" class="back-btn">← 返回上一頁</a>
+    </div>
+</body>
+</html>
